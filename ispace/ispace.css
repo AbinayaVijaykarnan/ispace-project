@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(0,0,0);;
+}
+
+/*nav-bar*/
+
+.outer{
+    background-color:rgb(85, 83, 83);
+    width:50%;
+    padding:20px;       /*for moving main-container down use this*/
+    margin:0 auto;
+}
+.main-container{
+    background-color: rgb(255,255,255);
+    width:90%;
+    margin:0 auto;
+}
+.nav-bar{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding:15px 10px;
+}
+.nav-bar a{
+    color:rgba(99, 96, 96, 0.842);
+    text-decoration:none;
+    font-weight:normal;
+    padding:15px 10px;
+   
+}
+.nav-bar a:hover{
+    color:white;
+    background-color: rgb(151, 218, 18);
+}
+
+/*responsive:
+
+@media only screen and (max-width:500px){
+    body{
+        background-color: #2a008b;
+    }
+    .outer{
+        width:100%;
+    }
+    .main-container{
+        width:100%;
+    }
+  } */
+
+
+/*heading-cover*/
+
+.heading-cover h1{
+    color: rgb(24, 23, 23);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:2rem;
+    font-weight:normal;
+    text-align: center;
+}
+.heading-cover::first-letter{
+    color:rgb(151, 218, 18);
+}
+.heading-cover img{
+    width:100%;
+    padding:15px;
+}
+
+/*radiobtn*/
+
+.radiobtn{
+    text-align: center;
+}
+.radiobtn h3{
+    color:rgb(51, 49, 49);
+    margin-top:10px;
+}
+/*section1*/
+.section1{
+    margin-bottom:20px;
+}
+.div1, .div2, .div3{
+    color:rgb(255,255,255);
+    width:30%;
+    float:left;
+    margin-left:13px; /*important*/
+}
+.div3{
+    margin-right:13px; /*important*/
+}
+.div1 h2, .div2 h2, .div3 h2{
+    background-color:rgb(151, 218, 18);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size:1rem;
+    text-align: center;
+    padding:10px 15px;
+}
+.div1 img, .div2 img, .div3 img{
+    width:100%;
+    height:150px;
+}
+.div1 p, .div2 p, .div3 p{
+    background-color:rgb(85, 83, 83);
+    font-size:10px;
+    line-height:1rem;
+    padding:10px 15px;
+}
+.div1 .fas, .div2 .fas, .div3 .fas{                        /*important part*/
+    color:rgb(255,255,255);
+    background-color: rgb(151, 218, 18);
+    width:40px;
+    height:36px;
+    margin:-10px -15px;
+    float: right;
+    text-align:center;
+    line-height:2.5rem ;
+    border-top-left-radius:40px;
+}
+.clearfix{
+    clear:both; /*without this, we won't get bgcolor for section1 & section2...since float property won't consider height*/
+}
+
+/*section2*/
+
+.sec1,.sec2,.sec3{
+    width:30%;
+    margin-left:13px;
+    float: left;
+}
+.sec1 h3{
+    padding:5px;
+}
+.sec1 li{
+    list-style-position: inside;
+    font-size:12px;
+    text-align:left;
+    margin:12px;
+}
+.sec2 .fas, .sec3 .far{
+    color:rgb(151, 218, 18);
+    width:100%;
+    font-size:2rem;
+    text-align: center;
+}
+.sec2 h3, .sec3 h3{
+    padding:5px 0;
+}
+.sec2 p, .sec3 p{
+    font-size:10px;
+    line-height:1rem;
+    padding:10px 10px 10px 0;
+}
+.sec2 button, .sec3 button{
+    color:rgb(255,255,255);
+    background-color:rgb(85, 83, 83);
+    font-size:0.5rem;
+    padding:5px;
+    margin:10px 0;
+}
+
+/*section3*/ /*important*/
+
+.fact1, .fact2 {
+    color:rgb(255,255,255);
+    background-color:rgb(85, 83, 83);
+    width:45%;
+}
+.fact1{
+    float:left;
+    margin-left: 15px; 
+}
+.fact2{
+    float:right;
+    margin-right: 15px;
+}
+.fact1 .fas, .fact2 .far{
+    background-color: rgb(157, 218, 36);
+    font-size:2rem;
+    width:25%;
+    height:100px;
+    float:left;
+    padding:20px 10px;
+}
+.fact1 small, .fact2 small{
+    font-size:1rem;
+    padding:5px;
+}
+.fact1 h6, .fact2 h6{
+    padding-top:10px;
+}
+.fact1 p, .fact2 p{
+    margin-top:10px;
+    font-size:10px;
+    line-height: 1rem;
+    padding:0 10px 10px 10px;
+}
+
+#footer{
+    color: rgb(85, 83, 83);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding:15px;
+}
+#footer span{
+    color: rgba(90, 5, 55, 0.89);
+    font-family: 'Dancing Script', cursive;
+    font-size:1.5rem;
+    text-shadow: 2px 0 2px rgba(90, 5, 55, 0.89);
+    letter-spacing:0.2rem;
+    padding:10px;
+}
