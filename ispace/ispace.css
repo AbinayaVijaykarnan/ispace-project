@@ -7,6 +7,8 @@
     box-sizing: border-box;
 }
 
+
+             /*Laptop view*/
 body{
     background-color:rgb(0,0,0);;
 }
@@ -15,9 +17,7 @@ body{
 
 .outer{
     background-color:rgb(85, 83, 83);
-    width:50%;
-    padding:20px;       /*for moving main-container down use this*/
-    margin:0 auto;
+    padding:30px 50px;       /*for moving main-container down use this*/
 }
 .main-container{
     background-color: rgb(255,255,255);
@@ -27,41 +27,29 @@ body{
 .nav-bar{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    padding:15px 10px;
+    padding:15px 10px;/*padding between each .nav-bar a*/
+    margin:30px 0;
 }
 .nav-bar a{
     color:rgba(99, 96, 96, 0.842);
     text-decoration:none;
+    font-size:1.5rem;
     font-weight:normal;
-    padding:15px 10px;
-   
+    padding:15px 40px;/*padding inside each .nav-bar a*/
 }
 .nav-bar a:hover{
     color:white;
     background-color: rgb(151, 218, 18);
 }
 
-/*responsive:
-
-@media only screen and (max-width:500px){
-    body{
-        background-color: #2a008b;
-    }
-    .outer{
-        width:100%;
-    }
-    .main-container{
-        width:100%;
-    }
-  } */
 
 
 /*heading-cover*/
 
 .heading-cover h1{
-    color: rgb(24, 23, 23);
+    color: rgba(24, 23, 23, 0.767);
     font-family:Arial, Helvetica, sans-serif;
-    font-size:2rem;
+    font-size:6rem;
     font-weight:normal;
     text-align: center;
 }
@@ -70,7 +58,7 @@ body{
 }
 .heading-cover img{
     width:100%;
-    padding:15px;
+    padding:50px;
 }
 
 /*radiobtn*/
@@ -86,15 +74,13 @@ body{
 .section1{
     margin-bottom:20px;
 }
-.div1, .div2, .div3{
+.div1, .div2,.div3{
     color:rgb(255,255,255);
-    width:30%;
+    width:28%; 
     float:left;
-    margin-left:13px; /*important*/
+    margin-left:45px; /*important*/
 }
-.div3{
-    margin-right:13px; /*important*/
-}
+
 .div1 h2, .div2 h2, .div3 h2{
     background-color:rgb(151, 218, 18);
     font-family:Arial, Helvetica, sans-serif;
@@ -105,19 +91,20 @@ body{
 }
 .div1 img, .div2 img, .div3 img{
     width:100%;
-    height:150px;
+    height:200px;
+    margin-bottom: -4px; /*important step..without this u have gap b/w img and <p>*/
 }
 .div1 p, .div2 p, .div3 p{
     background-color:rgb(85, 83, 83);
-    font-size:10px;
-    line-height:1rem;
+    font-size:1rem;
+    line-height:1.5rem;
     padding:10px 15px;
 }
 .div1 .fas, .div2 .fas, .div3 .fas{                        /*important part*/
     color:rgb(255,255,255);
     background-color: rgb(151, 218, 18);
-    width:40px;
-    height:36px;
+    width:50px;
+    height:45px;
     margin:-10px -15px;
     float: right;
     text-align:center;
@@ -132,17 +119,22 @@ body{
 
 .sec1,.sec2,.sec3{
     width:30%;
-    margin-left:13px;
     float: left;
 }
-.sec1 h3{
+.sec1{
+    margin-left:45px;
+}
+.sec2,.sec3{
+    margin-left:20px;
+}
+.sec1 h3,.sec2 h3,.sec3 h3{
     padding:5px;
+    text-align: center;
 }
 .sec1 li{
-    list-style-position: inside;
-    font-size:12px;
-    text-align:left;
-    margin:12px;
+    font-size:1rem;
+    margin:10px 0 0 100px;
+    
 }
 .sec2 .fas, .sec3 .far{
     color:rgb(151, 218, 18);
@@ -154,14 +146,14 @@ body{
     padding:5px 0;
 }
 .sec2 p, .sec3 p{
-    font-size:10px;
-    line-height:1rem;
+    font-size:1rem;
+    line-height:1.5rem;
     padding:10px 10px 10px 0;
 }
 .sec2 button, .sec3 button{
     color:rgb(255,255,255);
     background-color:rgb(85, 83, 83);
-    font-size:0.5rem;
+    font-size:1rem;
     padding:5px;
     margin:10px 0;
 }
@@ -172,34 +164,34 @@ body{
     color:rgb(255,255,255);
     background-color:rgb(85, 83, 83);
     width:45%;
+    
 }
 .fact1{
     float:left;
-    margin-left: 15px; 
+    margin-left:40px;  /*important*/
 }
 .fact2{
     float:right;
-    margin-right: 15px;
+    margin-right:40px;  /*important*/
 }
 .fact1 .fas, .fact2 .far{
     background-color: rgb(157, 218, 36);
-    font-size:2rem;
     width:25%;
-    height:100px;
     float:left;
-    padding:20px 10px;
+    font-size:2.5rem;
+    text-align: center;
+    padding:10px;
 }
 .fact1 small, .fact2 small{
-    font-size:1rem;
+    font-size:1.5rem;
     padding:5px;
 }
-.fact1 h6, .fact2 h6{
-    padding-top:10px;
+.fact1 h5, .fact2 h5{
+    padding:10px;
 }
 .fact1 p, .fact2 p{
-    margin-top:10px;
-    font-size:10px;
-    line-height: 1rem;
+    font-size:0.8rem;
+    line-height:1.5rem;
     padding:0 10px 10px 10px;
 }
 
@@ -217,3 +209,103 @@ body{
     letter-spacing:0.2rem;
     padding:10px;
 }
+
+           /*For responsive template: */
+
+@media only screen and (max-width:576px){
+    .outer{
+        background-color: #e2d41898;
+        width:100%;
+        padding:5px;
+    }
+    .main-container{
+        width:100%;
+    }
+    .nav-bar{
+        margin:0;
+    }
+    .nav-bar a{
+        padding:15px 15px;
+    }
+
+    .heading-cover h1{
+        font-size:4rem; 
+    }
+    .heading-cover img{ 
+        padding:20px; 
+    }
+
+    .div1, .div2,.div3{
+        width:30%; /*important*/
+        margin-left:12px;
+    }
+    .div1 img, .div2 img, .div3 img{
+        height:100px; 
+    }
+    .div1 p, .div2 p, .div3 p, .sec2 p,.sec3 p,.fact1 p,.fact2 p{
+        font-size: 0.8rem;
+        line-height:1.2rem;
+    }
+    .div1 .fas, .div2 .fas, .div3 .fas{                        /*important part*/
+        height:40px;
+    }
+
+    .sec1,.sec2,.sec3{
+        width:30%;
+        margin-left:10px;
+    }
+    .sec1 h3,.sec2 h3,.sec3 h3{
+        text-align:left;
+    }
+    .sec1 h3{
+        margin-top:10px; /*important*/
+    }
+    .sec1 li{
+        font-size:0.8rem;
+        margin:10px 0 0 20px;
+        
+    }
+    .sec2 .fas, .sec3 .far{
+        font-size:1.5rem;
+        /*For .sec2 p, sec3 p properties changed...refer .div1 p changes*/
+    }
+    
+    .sec2 button, .sec3 button{
+        font-size:0.8rem;
+        padding:5px;
+        margin:10px 0;
+    }
+
+    .fact1, .fact2 {
+        width:45%;
+    }
+    .fact1{
+        margin-left:12px; 
+    }
+    .fact2{
+        margin-right:12px; 
+    }
+    .fact1 .fas, .fact2 .far{
+        width:30%;
+        height:150px;
+        font-size:2rem;
+        line-height:3rem;  /*to align it vetically center..this property is used*/
+                           /* .fact1 p,.fact2 p properties changed...refer .div1*/
+    }
+       
+    #footer{
+        color: rgb(85, 83, 83);
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding:15px;
+    }
+    #footer span{
+        color: rgba(90, 5, 55, 0.89);
+        font-family: 'Dancing Script', cursive;
+        font-size:1.5rem;
+        text-shadow: 2px 0 2px rgba(90, 5, 55, 0.89);
+        letter-spacing:0.2rem;
+        padding:10px;
+    }
+
+  } 
